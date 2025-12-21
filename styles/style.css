@@ -1,0 +1,154 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  color: #222222;
+}
+
+/* ===== Header / Navigation ===== */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #944c94; /* subtle pink background */
+  padding: 20px 50px;
+  border-radius: 30px; /* ლამაზი rounded box */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+.campaign-title {
+  font-family: "Rockwell", sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  color: #222222;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links li a {
+  font-family: "Rockwell", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #531b5a; /* იასამნისფერი */
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  color: #762b94;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-box input {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #a7a7a7;
+}
+
+.search-box button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #7b1894;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background-color: #6c257a;
+}
+
+/* ===== Hero Section ===== */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  padding: 60px 40px;
+}
+
+.hero-box {
+  display: flex;
+  align-items: center;
+  background-color: #e4d0d3; /* კვადრატი */
+  border-radius: 40px;
+  padding: 40px;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* ჩრდილი ლამაზად */
+}
+
+.hero-logo {
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px; /* თუ გინდა ლოგოც ოდნავ მრგვალი კუთხეებით */
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-text h1 {
+  font-family: "Rockwell", sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  color: #222222;
+}
+
+.hero-quote {
+  font-family: "Rockwell", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #222222;
+}
+
+.hero-description {
+  font-family: "Rockwell", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #222222;
+  line-height: 1.5;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1200px) {
+  .hero-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .hero-logo {
+    width: 300px;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .hero-quote {
+    font-size: 20px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+}
