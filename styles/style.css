@@ -127,17 +127,18 @@ body {
   line-height: 1.5;
 }
 
+
 /* ===== Feminism History Layout ===== */
 
 .history-section {
-  padding: 120px 40px; /* დაშორება ზემოდან/ქვემოდან */
+  padding: 120px 40px; 
 }
 
 .history-container {
-  max-width: 1360px; /* Width ≈ 1360px */
-  min-height: 698px; /* Height ≈ 698px */
+  max-width: 1360px; 
+  min-height: 698px; 
   margin: 0 auto;
-  background-color: #f1c5d7; /* მთავარი ფონი */
+  background-color: #bc90cc; ი 
   border-radius: 40px;
   display: flex;
   align-items: center;
@@ -146,7 +147,7 @@ body {
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
 }
 
-/* Left text block */
+
 .history-text {
   flex: 1;
 }
@@ -174,7 +175,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* Right image */
+
 .history-image {
   flex: 1;
   display: flex;
@@ -201,7 +202,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f1c5d7;
+  background-color: #cb80da;
   border-radius: 40px;
   padding: 40px;
   gap: 30px;
@@ -241,21 +242,210 @@ body {
   text-align: justify;
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 1200px) {
-  .history-box {
-    padding: 30px;
-  }
 
-  .history-content img {
-    width: 90%;
-  }
-
-  .history-box h2 {
-    font-size: 28px;
-  }
-
-  .history-content p {
-    font-size: 16px;
-  }
+/* ===== Motivation Section ===== */
+.motivation {
+  display: flex;
+  justify-content: center;
+  padding: 60px 40px;
 }
+
+.motivation-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ac5c98; 
+  padding: 40px;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.motivation-title {
+  font-family: "Rockwell", sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  text-align: center;
+  color: #222222;
+}
+
+.motivation-text {
+  font-family: "Rockwell", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  color: #222222;
+}
+
+.motivation-photo {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+
+/*===== CTA Section ===== */
+.cta-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 40px;
+  background: linear-gradient(135deg, #f4c2d7, #a559b4);
+  border-radius: 40px;
+  margin: 60px 0;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  position: relative;
+  overflow: hidden;ს
+}
+
+.cta-container h2 {
+  font-family: "Rockwell", sans-serif;
+  font-weight: 800;
+  font-size: 42px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.cta-container p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 35px;
+  font-family: "Rockwell", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #a559b4;
+  background-color: #ffffff;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.cta-button:hover {
+  background-color: #f4c2d7;
+  color: #531b5a;
+  transform: translateY(-5px);
+}
+
+/* ===== CTA Section ===== */
+.cta-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px 40px;
+  background-color: #F1C5D7;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin: 60px auto;
+  max-width: 1200px;
+}
+
+.cta-container h2 {
+  font-family: "Rockwell", sans-serif;
+  font-weight: 800;
+  font-size: 42px;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+.cta-container p {
+  font-family: "Rockwell", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #222222;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.cta-button {
+  padding: 15px 35px;
+  font-family: "Rockwell", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  background-color: #7b1894;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #6c257a;
+  transform: scale(1.05);
+}
+
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  top: -25%;
+  left: -25%;
+  background: rgba(255,255,255,0.05);
+  transform: rotate(45deg);
+  animation: float 12s linear infinite;
+  z-index: 0;
+}
+
+.cta-container {
+  position: relative;
+  z-index: 1; 
+}
+
+@keyframes float {
+  0% { transform: rotate(45deg) translateX(0) translate
+
+
+.section-divider {
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(to right, #e4d0d3, #944c94, #e4d0d3);
+  margin: 60px auto;
+  border-radius: 5px;
+  animation: slideIn 1.5s ease-out;
+}
+
+@keyframes slideIn {
+  from { width: 0; opacity: 0; }
+  to { width: 80%; opacity: 1; }
+}
+
+
+
+
+.section-divider {
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(to right, #e4d0d3, #944c94, #e4d0d3);
+  margin: 60px auto;
+  border-radius: 5px;
+  animation: slideIn 1.5s ease-out;
+}
+
+.decor-dot {
+  font-size: 36px;
+  color: #944c94;
+  text-align: center;
+  margin: 40px 0;
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
