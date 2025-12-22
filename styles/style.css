@@ -8,6 +8,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
   color: #222222;
+ /*/ padding-top: 140px ;/*/
 }
 
 /* ===== Header / Navigation ===== */
@@ -15,11 +16,31 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #944c94;
+  background-color: #b14db1;
   padding: 20px 50px;
   border-radius: 30px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
+
+/*.main-nav {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #944c94;
+  padding: 20px 50px;
+  border-radius: 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+
+  width: calc(100% - 80px);
+  max-width: 1360px;
+}/*/
 
 .campaign-title {
   font-family: "Rockwell", sans-serif;
@@ -39,12 +60,12 @@ body {
   font-family: "Rockwell", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  color: #531b5a;
+  color: #dd92e7;
   text-decoration: none;
 }
 
 .nav-links li a:hover {
-  color: #762b94;
+  color: #a275b4;
 }
 
 .search-box {
@@ -62,14 +83,14 @@ body {
 .search-box button {
   padding: 8px 12px;
   border: none;
-  background-color: #7b1894;
+  background-color: #b982c7;
   color: #fff;
   border-radius: 8px;
   cursor: pointer;
 }
 
 .search-box button:hover {
-  background-color: #6c257a;
+  background-color: #c386cf;
 }
 
 /* ===== Hero Section ===== */
@@ -138,7 +159,7 @@ body {
   max-width: 1360px; 
   min-height: 698px; 
   margin: 0 auto;
-  background-color: #bc90cc; ი 
+  background-color: #bc91cc; ი 
   border-radius: 40px;
   display: flex;
   align-items: center;
@@ -202,7 +223,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #cb80da;
+  background-color: #c492ce;
   border-radius: 40px;
   padding: 40px;
   gap: 30px;
@@ -254,7 +275,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ac5c98; 
+  background-color: #cf8cbe; 
   padding: 40px;
   gap: 30px;
   max-width: 1200px;
@@ -326,7 +347,7 @@ body {
   font-family: "Rockwell", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  color: #a559b4;
+  color: #c695cf;
   background-color: #ffffff;
   border-radius: 30px;
   text-decoration: none;
@@ -336,9 +357,132 @@ body {
 
 .cta-button:hover {
   background-color: #f4c2d7;
-  color: #531b5a;
+  color: #b86dc2;
   transform: translateY(-5px);
 }
+
+
+
+/* ===== Author Reflection Section ===== */
+.author-reflection {
+  display: flex;
+  justify-content: center;
+  padding: 80px 40px;
+  background-color: #7b1f70;
+  border-radius: 40px;
+  margin: 60px 0;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.reflection-container {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1;
+}
+
+.author-reflection h2 {
+  font-family: "Rockwell", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #ffd6f0;
+}
+
+.author-reflection p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+
+Milena Dzigiria
+14:25 (1 წუთის წინ)
+ვის მე
+
+/* ===== Author Reflection Section – Fancy Version ===== */
+.author-reflection {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding: 100px 40px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #4b0f3a, #7b1f70);
+  border-radius: 60px;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+}
+
+.reflection-container {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  z-index: 1;
+}
+
+.author-reflection h2 {
+  font-family: "Rockwell", sans-serif;
+  font-weight: 800;
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #ffd6f0;
+  transition: 0.3s ease;
+}
+
+.author-reflection p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect on paragraph */
+.author-reflection p:hover {
+  color: #f4c2d7;
+  transform: scale(1.03);
+}
+
+/* Floating organic shapes background */
+.author-reflection::before,
+.author-reflection::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+  z-index: 0;
+  animation: floatShape 15s infinite alternate ease-in-out;
+}
+
+.author-reflection::before {
+  width: 400px;
+  height: 400px;
+  top: -100px;
+  left: -150px;
+}
+
+.author-reflection::after {
+  width: 600px;
+  height: 600px;
+  bottom: -200px;
+  right: -250px;
+  animation-duration: 20s;
+}
+
+@keyframes floatShape {
+  0% { transform: translate(0,0) rotate(0deg); }
+  50% { transform: translate(20px, -30px) rotate(45deg); }
+  100% { transform: translate(0,0) rotate(0deg); }
+}
+
 
 /* ===== CTA Section ===== */
 .cta-section {
