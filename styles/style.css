@@ -12,6 +12,7 @@ body {
 }
 
 /*Header / Navigation*/
+/*/
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -71,7 +72,7 @@ body {
 
 .search-box button:hover {
   background-color: #c386cf;
-}
+}/*/
 
 /*Hero Section*/
 .hero {
@@ -1871,16 +1872,69 @@ object-fit: cover;
   }
 }
 
-/* autofrefixer*/
-
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
 
 
+
+/* Hide checkbox */
+#menu-toggle {
+  display: none;
+}
+
+
+.burger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  
+  .burger {
+    display: block;
+  }
+
+  
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: white;
+    width: 220px;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    gap: 15px;
+  }
+
+  
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  
+  .search-box {
+    display: none;
+  }
+
+  
+  .main-nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+}
+
+ 
 
 /* Responsive styles*/
+
 @media (max-width: 480px) {
   body {
     font-size: 14px;
@@ -1920,11 +1974,7 @@ object-fit: cover;
     font-size: 1rem;
   }
 
-  .facebook-icon {
-    font-size: 20px;
-  }
-}
-
+ 
 
 @media (min-width: 481px) and (max-width: 768px) {
   .container,
@@ -1955,7 +2005,7 @@ object-fit: cover;
   }
 }
 
- 
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .news-content,
   .partner-card {
@@ -1969,3 +2019,18 @@ object-fit: cover;
     height: auto;
   }
 }
+
+
+
+/* autofrefixer*/
+
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+
+
+
+
+
+
