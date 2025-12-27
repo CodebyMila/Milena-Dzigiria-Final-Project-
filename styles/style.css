@@ -365,7 +365,7 @@ body {
   text-align: justify;
 }
 
-/* --- Tablet (max-width: 1024px) --- */ 
+/* --- Tablet (max-width: 1024px) --- */
 @media (max-width: 1024px) {
   .history-section {
     padding: 60px 20px;
@@ -3064,141 +3064,6 @@ body {
   color: #eee;
 }
 
-
-/* RESPONSIVE */
-@media (max-width: 1024px) {
-  .section-title {
-    font-size: 1.8rem;
-  }
-
-  .section-description {
-    font-size: 1.05rem;
-    max-width: 85%;
-  }
-
-  .cards-container {
-    gap: 20px;
-  }
-
-  .myth-card h3 {
-    font-size: 1.1rem;
-  }
-
-  .myth-card h4 {
-    font-size: 0.95rem;
-  }
-
-  .myth-card p {
-    font-size: 0.9rem;
-  }
-
-  .site-footer h3 {
-    font-size: 1.6rem;
-  }
-
-  .site-footer p {
-    font-size: 0.95rem;
-  }
-
-  .footer-bottom {
-    font-size: 0.85rem;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 1.6rem;
-  }
-
-  .section-description {
-    font-size: 1rem;
-    max-width: 90%;
-  }
-
-  .cards-container {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .myth-card h3 {
-    font-size: 1rem;
-  }
-
-  .myth-card h4 {
-    font-size: 0.9rem;
-  }
-
-  .myth-card p {
-    font-size: 0.85rem;
-  }
-
-  .site-footer h3 {
-    font-size: 1.4rem;
-  }
-
-  .site-footer p {
-    font-size: 0.9rem;
-  }
-
-  .footer-bottom {
-    font-size: 0.8rem;
-  }
-}
-
-
-@media (max-width: 480px) {
-  .myth-truth-section {
-    padding: 40px 10px;
-  }
-
-  .section-title {
-    font-size: 1.4rem;
-  }
-
-  .section-description {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    max-width: 95%;
-  }
-
-  .cards-container {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .myth-card {
-    padding: 15px;
-  }
-
-  .myth-card h3 {
-    font-size: 0.95rem;
-  }
-
-  .myth-card h4 {
-    font-size: 0.85rem;
-  }
-
-  .myth-card p {
-    font-size: 0.8rem;
-  }
-
-  .site-footer {
-    padding: 30px 10px;
-  }
-
-  .site-footer h3 {
-    font-size: 1.3rem;
-  }
-
-  .site-footer p {
-    font-size: 0.85rem;
-  }
-
-  .footer-bottom {
-    font-size: 0.75rem;
-  }
-
 /*contact*/
 /* 1 seqcia*/
 .founder-letter {
@@ -3222,7 +3087,7 @@ body {
 }
 
 .letter-frame::before {
-  content: "“";
+  content: "вЂњ";
   font-size: 5rem;
   color: #f4a261;
   position: absolute;
@@ -3245,7 +3110,7 @@ body {
   margin-top: 30px;
 }
 
-/*2 სექცია*/
+/*2 section*/
 .partner-section {
   padding: 60px 20px;
   display: flex;
@@ -3329,136 +3194,6 @@ body {
   transform: scale(1.07);
   filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.2));
 }
-
-
-Milena Dzigiria
-18:23 (0 წუთის წინ)
-ვის მე
-
-/*  RESPONSIVE*/
-@media (max-width: 1024px) {
-  .letter-frame {
-    padding: 35px 40px;
-    font-size: 1.05rem;
-  }
-
-  .letter-frame::before {
-    font-size: 4.5rem;
-    top: -15px;
-    left: 15px;
-  }
-
-  .letter-frame .highlight {
-    font-size: 1.15rem;
-  }
-
-  .partner-card {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    padding: 35px;
-  }
-
-  .partner-text h2 {
-    font-size: 1.8rem;
-  }
-
-  .partner-text p {
-    font-size: 1rem;
-  }
-
-  .partner-logo img {
-    width: 180px;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .letter-frame {
-    padding: 30px 25px;
-    font-size: 1rem;
-  }
-
-  .letter-frame::before {
-    font-size: 4rem;
-    top: -10px;
-    left: 10px;
-  }
-
-  .letter-frame .highlight {
-    font-size: 1.1rem;
-  }
-
-  .partner-card {
-    padding: 30px 20px;
-    gap: 20px;
-  }
-
-  .partner-text h2 {
-    font-size: 1.6rem;
-    text-align: center;
-  }
-
-  .partner-text p {
-    font-size: 0.95rem;
-    text-align: center;
-  }
-
-  .partner-logo img {
-    width: 160px;
-  }
-}
-
-
-@media (max-width: 480px) {
-  .founder-letter {
-    margin: 30px 10px;
-  }
-
-  .letter-frame {
-    padding: 20px 15px;
-    font-size: 0.95rem;
-  }
-
-  .letter-frame::before {
-    font-size: 3.5rem;
-    top: -5px;
-    left: 10px;
-  }
-
-  .letter-frame .highlight {
-    font-size: 1rem;
-    margin-top: 20px;
-  }
-
-  .partner-section {
-    padding: 40px 10px;
-  }
-
-  .partner-card {
-    flex-direction: column;
-    gap: 15px;
-    padding: 25px 15px;
-  }
-
-  .partner-text h2 {
-    font-size: 1.4rem;
-  }
-
-  .partner-text p {
-    font-size: 0.9rem;
-  }
-
-  .partner-logo img {
-    width: 140px;
-  }
-
-  .partner-card::before,
-  .partner-card::after {
-    display: none; 
-  }
-}
-
 
 /*3 seqcia*/
 .contact-section {
@@ -3552,110 +3287,6 @@ Milena Dzigiria
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
 }
 
-/*  RESPONSIVE */
-@media (max-width: 1024px) {
-  .contact-section {
-    padding: 50px 20px;
-  }
-
-  .contact-text {
-    font-size: 1.05rem;
-  }
-
-  .contact-info {
-    gap: 30px;
-  }
-
-  .contact-link {
-    font-size: 1rem;
-  }
-
-  .card-container {
-    padding: 25px;
-    gap: 15px;
-  }
-
-  .card-text {
-    font-size: 1rem;
-  }
-
-  .card-image img {
-    max-width: 90%;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .contact-section {
-    padding: 40px 15px;
-  }
-
-  .contact-text {
-    font-size: 0.95rem;
-  }
-
-  .contact-info {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .contact-link {
-    font-size: 0.95rem;
-  }
-
-  .card-container {
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
-  }
-
-  .card-text {
-    font-size: 0.95rem;
-    text-align: center;
-  }
-
-  .card-image img {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-
-@media (max-width: 480px) {
-  .contact-section {
-    padding: 30px 10px;
-    border-radius: 15px;
-  }
-
-  .contact-text {
-    font-size: 0.9rem;
-  }
-
-  .contact-info {
-    gap: 15px;
-  }
-
-  .contact-link {
-    font-size: 0.9rem;
-  }
-
-  .card-container {
-    padding: 15px;
-    gap: 15px;
-  }
-
-  .card-text {
-    font-size: 0.9rem;
-  }
-
-  .card-image img {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-
-
 /* Farewell Section Styles */
 .farewell-section {
   background: linear-gradient(135deg, #db96ec, #ffcc33);
@@ -3699,40 +3330,6 @@ Milena Dzigiria
     color: #fff;
   }
 }
-
-/* RESPONSIVE */
-@media (max-width: 1024px) {
-  .farewell-section {
-    padding: 80px 20px;
-  }
-
-  .farewell-text {
-    font-size: 1.8rem;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .farewell-section {
-    padding: 60px 15px;
-  }
-
-  .farewell-text {
-    font-size: 1.6rem;
-  }
-}
-
-
-@media (max-width: 480px) {
-  .farewell-section {
-    padding: 40px 10px;
-  }
-
-  .farewell-text {
-    font-size: 1.4rem;
-  }
-}
-
 
 /* Hide checkbox */
 #menu-toggle {
