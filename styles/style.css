@@ -892,7 +892,7 @@ body {
 
   .octagon-text {
     padding: 60px 50px;
-    min-height: 380px;
+    min-height: 780px;
     max-width: 100%;
   }
 
@@ -922,7 +922,7 @@ body {
 
   .octagon-text {
     padding: 50px 30px;
-    min-height: 350px;
+    min-height: 800px;
   }
 
   .about-title {
@@ -958,7 +958,7 @@ body {
 
   .octagon-text {
     padding: 40px 20px;
-    min-height: 300px;
+    min-height: 800px;
   }
 
   .about-title {
