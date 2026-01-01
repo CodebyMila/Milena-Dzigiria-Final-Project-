@@ -87,10 +87,10 @@ body {
 }
 
 @media (max-width: 768px) {
-  .main-nav {
+  /* .main-nav {
     flex-direction: column;
     gap: 20px;
-  }
+  } */
 
   .nav-links {
     gap: 20px;
