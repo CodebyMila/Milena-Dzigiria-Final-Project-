@@ -87,10 +87,10 @@ body {
 }
 
 @media (max-width: 768px) {
-  .main-nav {
+  /* .main-nav {
     flex-direction: column;
     gap: 20px;
-  }
+  } */
 
   .nav-links {
     gap: 20px;
@@ -741,7 +741,7 @@ body {
 
 .octagon-text {
   background: #f9f9f9;
-  padding: 70px 80px;
+  padding: 100px 80px;
   min-height: 420px;
   max-width: 600px;
 
@@ -775,6 +775,7 @@ body {
   line-height: 1.6;
   color: #222;
   margin-bottom: 20px;
+  margin: 0 20px;
 }
 
 .about-photo {
@@ -892,7 +893,7 @@ body {
 
   .octagon-text {
     padding: 60px 50px;
-    min-height: 380px;
+    min-height: 780px;
     max-width: 100%;
   }
 
@@ -921,8 +922,8 @@ body {
   }
 
   .octagon-text {
-    padding: 50px 30px;
-    min-height: 350px;
+    padding: 100px 30px;
+    min-height: 600px;
   }
 
   .about-title {
@@ -930,7 +931,7 @@ body {
   }
 
   .octagon-text p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .about-photo img {
@@ -951,14 +952,36 @@ body {
   }
 }
 
+@media (max-width: 700px) {
+  .octagon-text {
+    padding: 100px 30px;
+    min-height: 700px;
+  }
+
+  .octagon-text p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 580px) {
+  .octagon-text {
+    padding: 100px 30px;
+    min-height: 850px;
+  }
+
+  .octagon-text p {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 480px) {
   .about-section {
     padding: 50px 20px;
   }
 
   .octagon-text {
-    padding: 40px 20px;
-    min-height: 300px;
+    padding: 100px 20px;
+    min-height: 900px;
   }
 
   .about-title {
